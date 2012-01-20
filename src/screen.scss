@@ -1,0 +1,122 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$light_green: #D4E3CE;
+$dark_green: #00230E;
+$hover_green: #005D26;
+
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Tinos', arial, serif;
+	background-color:$light_green;
+	background-image:url(../images/fond.jpg);
+	background-repeat:repeat-x;
+}
+#page{
+	width:1000px;
+	margin:auto;
+	#header{
+		position:relative;
+		p{
+			font-size:12px;
+			font-style:italic;
+		}
+		#logo{
+			margin-top:45px;
+		}
+		#slash{
+			position:absolute;
+			z-index:-2;
+			right:170px;
+			top:95px;
+				#two{
+					margin-left:115px;
+				}
+				#three{
+					margin-left:140px;
+			}
+		}
+		#menu{
+			position:absolute;
+			right:50px;
+			top:100px;
+			li{
+				display:inline;
+				font-size:25px;
+				margin-left:25px;
+			}
+			a{
+				color: $dark_green;
+				text-decoration:none;
+				&:hover{
+					color:$hover_green;
+				}
+			}
+			#active{
+				color:$hover_green;
+			}
+		}
+	}
+	#content{
+		margin-top:100px;
+		width:900px;
+		.important{
+			font-weight:bold;
+			font-size:28px;
+		}
+		.bold{
+			font-weight:bold;
+		}
+		h1{
+			font-size:35px;
+			margin-bottom:25px;
+			margin-left:80px;
+		}
+		
+		h2 { 
+			font-size:90px;
+			font-family: 'Kristi', arial, serif; 
+			margin-bottom:45px;
+			margin-left:125px;
+			color:$hover_green;
+		}
+		h3{
+			font-size:35px;
+			margin-bottom:25px;
+		}
+		.title_green{
+			font-style:italic;
+			font-size:35px;
+			color:$hover_green;
+		}
+		.italic{
+			font-style:italic;
+		}
+		p{
+			margin-bottom:25px;
+			font-size:20px;
+			text-align:justify;
+		}
+		a{
+			color:$hover_green;
+			text-decoration:none;
+				&:hover{
+					text-decoration:underline;
+				}
+		}
+		ul{
+			margin-bottom:25px;
+			li{
+				list-style-type:disc;
+				margin:0px 0px 10px 35px;
+				padding-left:10px;
+				font-size:20px;
+			}
+		}
+	}
+}
