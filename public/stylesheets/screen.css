@@ -1,0 +1,171 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 20, /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1; }
+
+/* line 22, /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 24, /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 26, /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 28, /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 101, /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 30, /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 114, /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 12, content/stylesheets/screen.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Tinos', arial, serif;
+  background-color: #d4e3ce;
+  background-image: url(../images/fond.jpg);
+  background-repeat: repeat-x; }
+
+/* line 20, content/stylesheets/screen.scss */
+#page {
+  width: 1000px;
+  margin: auto; }
+  /* line 23, content/stylesheets/screen.scss */
+  #page #header {
+    position: relative; }
+    /* line 25, content/stylesheets/screen.scss */
+    #page #header p {
+      font-size: 12px;
+      font-style: italic; }
+    /* line 29, content/stylesheets/screen.scss */
+    #page #header #logo {
+      margin-top: 45px; }
+    /* line 32, content/stylesheets/screen.scss */
+    #page #header #slash {
+      position: absolute;
+      z-index: -2;
+      right: 170px;
+      top: 95px; }
+      /* line 37, content/stylesheets/screen.scss */
+      #page #header #slash #two {
+        margin-left: 115px; }
+      /* line 40, content/stylesheets/screen.scss */
+      #page #header #slash #three {
+        margin-left: 140px; }
+    /* line 44, content/stylesheets/screen.scss */
+    #page #header #menu {
+      position: absolute;
+      right: 50px;
+      top: 100px; }
+      /* line 48, content/stylesheets/screen.scss */
+      #page #header #menu li {
+        display: inline;
+        font-size: 25px;
+        margin-left: 25px; }
+      /* line 53, content/stylesheets/screen.scss */
+      #page #header #menu a {
+        color: #00230e;
+        text-decoration: none; }
+        /* line 56, content/stylesheets/screen.scss */
+        #page #header #menu a:hover {
+          color: #005d26; }
+      /* line 60, content/stylesheets/screen.scss */
+      #page #header #menu #active {
+        color: #005d26; }
+  /* line 65, content/stylesheets/screen.scss */
+  #page #content {
+    margin-top: 100px;
+    width: 900px; }
+    /* line 68, content/stylesheets/screen.scss */
+    #page #content .important {
+      font-weight: bold;
+      font-size: 28px; }
+    /* line 72, content/stylesheets/screen.scss */
+    #page #content .bold {
+      font-weight: bold; }
+    /* line 75, content/stylesheets/screen.scss */
+    #page #content h1 {
+      font-size: 35px;
+      margin-bottom: 25px;
+      margin-left: 80px; }
+    /* line 81, content/stylesheets/screen.scss */
+    #page #content h2 {
+      font-size: 90px;
+      font-family: 'Kristi', arial, serif;
+      margin-bottom: 45px;
+      margin-left: 125px;
+      color: #005d26; }
+    /* line 88, content/stylesheets/screen.scss */
+    #page #content h3 {
+      font-size: 35px;
+      margin-bottom: 25px; }
+    /* line 92, content/stylesheets/screen.scss */
+    #page #content .title_green {
+      font-style: italic;
+      font-size: 35px;
+      color: #005d26; }
+    /* line 97, content/stylesheets/screen.scss */
+    #page #content .italic {
+      font-style: italic; }
+    /* line 100, content/stylesheets/screen.scss */
+    #page #content p {
+      margin-bottom: 25px;
+      font-size: 20px;
+      text-align: justify; }
+    /* line 105, content/stylesheets/screen.scss */
+    #page #content a {
+      color: #005d26;
+      text-decoration: none; }
+      /* line 108, content/stylesheets/screen.scss */
+      #page #content a:hover {
+        text-decoration: underline; }
+    /* line 112, content/stylesheets/screen.scss */
+    #page #content ul {
+      margin-bottom: 25px; }
+      /* line 114, content/stylesheets/screen.scss */
+      #page #content ul li {
+        list-style-type: disc;
+        margin: 0px 0px 10px 35px;
+        padding-left: 10px;
+        font-size: 20px; }
