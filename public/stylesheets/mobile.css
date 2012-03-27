@@ -1,0 +1,29 @@
+/*********************
+       Mobile
+*********************/
+@media handeld and (max-width:480px), screen and (max-device-width: 480px), screen and (max-width: 750px) {
+  /* line 9, content/stylesheets/mobile.css */
+  #mobile {
+    margin: 0px, 20px, 10px, 20px; }
+
+  /* line 13, content/stylesheets/mobile.css */
+  body {
+    background-color: orange; } }
+/*			
+	body {
+		background-color: orange;
+		}
+	#right_column, #left_column {
+		display: none;
+		}
+	#wrapper, #middle_column {
+		width : inherit;
+		}
+	h1 {
+		font-size: 3em;
+		margin-bottom : 10px;
+		}	
+	h2 {
+		display: none;
+		}	
+*/
