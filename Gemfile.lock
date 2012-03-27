@@ -2,7 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.2.6)
-    capistrano (2.9.0)
+    capistrano (2.11.2)
       highline
       net-scp (>= 1.0.0)
       net-sftp (>= 2.0.0)
@@ -38,7 +38,7 @@ GEM
       nanoc (>= 3.1.5)
     guard-rspec (0.6.0)
       guard (>= 0.10.0)
-    highline (1.6.9)
+    highline (1.6.11)
     i18n (0.6.0)
     json (1.6.5)
     livereload (1.6.1)
