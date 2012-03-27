@@ -5,34 +5,44 @@
 @media handeld and (max-width:480px),
 		screen and (max-device-width: 480px),
 		screen and (max-width: 750px) {
-	
-	#mobile {
-		margin:0px, 20px, 10px, 20px;
+		
+	#menu {
+		display: none;
 	}
 
-	body {
-		background-color: orange;
-		
+	#slash {
+		display: none;
 	}
-		
-		
-		
+
+	#page {
+		width: 320px;
+
+		#content {
+			width: 310px;
+			margin: 0 auto;
+
+      h3 {
+      font-size: 20px;
+      font-weight: bold;
+      }
+
+      .title_green {
+      font-size: 15px;
+      }
+
+      p {
+        font-size: 15px;
+        text-align: left;
+      }
+		}
+	}
+
+	#logo{
+		margin-left: 80px;
+	}
+
+	#create {
+		margin-left: 80px;
+    margin-bottom: 50px;
+	}		
 }		
-/*			
-	body {
-		background-color: orange;
-		}
-	#right_column, #left_column {
-		display: none;
-		}
-	#wrapper, #middle_column {
-		width : inherit;
-		}
-	h1 {
-		font-size: 3em;
-		margin-bottom : 10px;
-		}	
-	h2 {
-		display: none;
-		}	
-*/
