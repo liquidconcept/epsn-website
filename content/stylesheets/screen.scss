@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "fancy-buttons";
 
 $light_green: #D4E3CE;
 $dark_green: #00230E;
@@ -62,9 +63,35 @@ body{
 			}
 		}
 	}
+	
+	.contact{
+		width: 400px;
+		margin: 0 auto;
+
+		.contact_merci{
+			color: $hover_green;
+		}
+	}
 	#content{
 		margin-top:100px;
 		width:900px;
+	
+		.form {
+			span.label,span.spacer,span.multiple span {
+				width:120px;float:left;
+			}			 
+			span.multiple {
+				float:left;
+			}  
+			button {
+  			@include fancy-button(#005D26, 15px, 1em);
+ 		 	}
+ 
+			.submit_btn {
+				margin: 25px 0 40px 120px;
+			}
+		}
+
 		.important{
 			font-weight:bold;
 			font-size:28px;

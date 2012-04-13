@@ -20,6 +20,8 @@ GEM
       addressable (>= 2.1.1)
       eventmachine (>= 0.12.9)
     eventmachine (0.12.10)
+    fancy-buttons (1.2.0)
+      compass (>= 0.11)
     ffi (1.0.11)
     fssm (0.2.8.1)
     googlecharts (1.6.8)
@@ -94,6 +96,7 @@ PLATFORMS
 DEPENDENCIES
   capistrano
   compass
+  fancy-buttons
   googlecharts
   guard
   guard-bundler

@@ -10,6 +10,7 @@ gem 'pony'
 gem 'sqlite3'
 
 gem 'compass'
+gem 'fancy-buttons'
 
 gem 'capistrano',       :group => [:development]
 gem 'railsless-deploy', :group => [:development]
