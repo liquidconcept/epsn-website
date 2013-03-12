@@ -16,6 +16,11 @@ end
 compile '/javascript/*/' do
 end
 
+compile '/mednat/*' do
+  filter :erb
+  layout 'layout_mednat'
+end
+
 compile '*' do
   filter :erb
   layout 'default'
