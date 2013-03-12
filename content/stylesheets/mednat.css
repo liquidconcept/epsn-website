@@ -61,6 +61,7 @@ body {
     }
 
     article#formulaire {
+    padding-bottom: 120px;
 
       h2 {
         font-size: 48px;
@@ -160,22 +161,23 @@ body {
   footer {
     background-color: #3F3F3F;
     clear: both;
-    padding-left: 135px;
 
     h1 {
+      padding-left: 135px;
+      padding-top: 30px;
       font-family: tahoma;
-      color: white;
+      color: #eaeaea;
       font-size: 20px;
     }
 
     h2 {
       font-family: tahoma;
-      color: white;
+      color: #eaeaea;
       font-size: 14px;
     }
 
     p {
-      color: white;
+      color: #eaeaea;
       font-size: 14px;
       font-family: tahoma;
 
@@ -187,11 +189,70 @@ body {
       /****************************/
     }
 
+    #description {
+      padding-bottom: 30px;
+      padding-right: 160px;
+      border-top: 1px #c2c2c2 solid;
+      background-color: #eaeaea;
+      padding-left: 135px;
+
+      h1 {
+        padding: 0px;
+        color: #3F3F3F;
+      }
+
+      h2 {
+        color: black;
+        font-size: 16px;
+        font-family: Arial;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 14px;
+        font-family: Arial;
+        color: black;
+      }
+    }
+
     #administration {
       float: left;
+      margin-right: 60px;
+      height: 200px;
+      padding-left: 135px;
     }
 
     #lieu_cours {
+      padding-top: 1px;
+      float: left;
+      margin-right: 180px;
+      height: 200px;
+    }
+
+    #network {
+      padding-top: 13px;
+
+      p {
+        height: 60px;
+        font-size: 30px;
+        font-family: Tahoma;
+
+        img {
+          padding-right: 30px;
+          display: inline;
+        }
+
+        span {
+          font-size: 12px;
+          font-family: Tahoma;
+        }
+      }
+    }
+
+    .copyright {
+      margin-top: 40px;
+      padding-bottom: 30px;
+      text-align: center;
     }
   }
 }
