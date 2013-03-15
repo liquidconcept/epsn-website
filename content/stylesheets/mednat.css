@@ -1,6 +1,16 @@
+/*** IE ***/
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section {
+ display: block;
+}
+/**********/
+
 body {
   border-top: 8px solid #0F6022;
   margin: 0px;
+
+  a > img {
+    text-decoration: none; border: none;
+  }
 
   .both {
     clear: both;
@@ -197,7 +207,7 @@ body {
       padding-left: 135px;
 
       h1 {
-        padding: 0px;
+        padding: 20px 0 0 0;
         color: #3F3F3F;
       }
 
