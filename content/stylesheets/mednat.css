@@ -246,10 +246,14 @@ body {
         height: 60px;
         font-size: 30px;
         font-family: Tahoma;
+        line-height: normal;
+        margin: 0 0 0 0;
 
         img {
           padding-right: 30px;
           display: inline;
+          height: 35px;
+          width: 35px;
         }
 
         span {
