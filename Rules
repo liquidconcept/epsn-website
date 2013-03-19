@@ -16,6 +16,11 @@ end
 compile '/javascript/*/' do
 end
 
+compile 'mednat_trouver_julien' do
+  filter :erb
+  layout 'layout_mednat_trouver_julien'
+end
+
 compile '*' do
   filter :erb
   layout 'default'
@@ -40,6 +45,10 @@ end
 
 route '/javascript/*/' do
   item.identifier.chop + '.js'
+end
+
+route '/mednat_trouver_julien/' do
+  '/mednat/index.html'
 end
 
 route '*' do
