@@ -47,6 +47,10 @@ route '/javascript/*/' do
   item.identifier.chop + '.js'
 end
 
+route '/mednat_trouver_julien/' do
+  '/mednat/index.html'
+end
+
 route '*' do
   if item.children.size > 0 || item.identifier == '/'
     item.identifier + 'index.html'
