@@ -1,0 +1,16 @@
+/*********************
+       Mobile
+*********************/
+
+@media handeld and (max-width:320px),
+    screen and (max-device-width: 320px),
+    screen and (max-width: 480px) {
+    
+  body {
+    background-color: red;
+  
+    #main {
+      width: 320px;
+    }
+  }
+}   

@@ -16,9 +16,9 @@ end
 compile '/javascript/*/' do
 end
 
-compile '/mednat/*' do
+compile 'mednat_julien' do
   filter :erb
-  layout 'layout_mednat'
+  layout 'layout_mednat_trouver_julien'
 end
 
 compile '*' do
