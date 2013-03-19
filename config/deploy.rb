@@ -37,6 +37,7 @@ namespace :deploy do
 end
 
 before 'deploy:symlink' do
+  run "rm #{File.join(release_path,'config.ru')}"
 end
 
 after 'deploy:update', 'deploy:restart'
