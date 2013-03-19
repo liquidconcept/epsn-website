@@ -2,39 +2,208 @@
        Mobile
 *********************/
 
-@media handeld and (max-width:480px),
-    screen and (max-device-width: 480px),
-    screen and (max-width: 480px) {
+@media handeld and (max-width:320px), screen and (max-device-width: 320px), screen and (max-width: 480px) {
+/* ATTENTION orientation paysage */
+h2 {
+  font-size: 19px;;
+}
 
   body {
+    max-width: 320px;
 
     #main {
-      max-width: 480px;
-
-      h2 {
-        font-size: 10px;
-      }
+      margin: 0 auto;
 
       #header {
 
-        img.julien {
-          margin: 0;
+        #logo {
+          width: 200px;
+          margin-left: 50px;
+          margin-top: 18px;
+
+          img {
+            float: left;
+            margin-right: 10px;
+            margin-left: 20px;
+          }
+
+          h3 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.6em;
+            padding-top: 25px;
+          }
+
+          h1 {
+            font-size: 14px;
+            font-weight: lighter;
+            text-align: center;
+          }
+        }
+
+        .image_julien {
+          margin: 0 auto;
+          width: 320px;
+
+
+          img.julien {
+            display: block;
+            max-width: 300px;
+          }
+
+          img.ou {
+            max-width: 300px;
+            margin-bottom: 20px;
+            margin-left: 0;
+          }
+        }
+
+        h2 {
+          margin-top: 10px;
+        }
+      }
+
+      article#formulaire {
+      max-width: 300px;
+      margin: 0 auto;
+      padding-bottom: 120px;
+
+        h4 {
+          font-size: 20px;
+          font-weight: 700;
+          text-align: center;
+          margin-top: 8px;
+        }
+
+        form {
+          margin-left: 0;
+
+          label {
+            font-weight: bold;
+            font-style: normal;
+            font-size: 24px;
+            color: grey;
+            line-height: 55px;
+          }
+
+          input, select {
+            border-width: 1px;
+            width: 100%;
+            height: 35px;
+            font-size: 24px;
+          }
+
+          select {
+            font-size: 10px;
+            width: 100%;
+          }
+
+          input.subscribe {
+            font-size: 16px;
+            width: 100%;
+            height: 44px;
+            margin-top: 10px;
+          }
         }
       }
 
       footer {
-        max-width: 480px;
 
-         section.description {
+        section.description {
+          padding-left: 20px;
+          padding-right: 20px;
 
           article {
+            width: 280px;
+            margin: 0 auto;
 
             #description {
-              display: block;
+              padding: 0;
+              padding-bottom: 20px;
 
+              h1 {
+                padding: 20px 0 0 0;
+                font-size: 18px;
+              }
+
+              h2 {
+                font-size: 16px;
+                margin-top: 10px;
+                padding-bottom: 10px;
+              }
+
+              p {
+                font-size: 14px;
+              }
             }
           }
-         }
+        }
+        div.network {
+
+           section {
+            width: 320px;
+            margin: 0 auto;
+
+            .content_network {
+              margin-left: 20px;
+
+              h1 {
+                padding-top: 15px;
+                font-size: 15px;
+              }
+
+              h2 {
+                font-size: 14px;
+              }
+
+              h5 {
+                font-size: 14px;
+              }
+
+              p {
+                font-size: 14px;
+              }
+
+              .administration {
+                height: auto;
+                float: none;
+              }
+
+              .lieu_cours {
+                padding-top: 1px;
+                height: auto;
+                float: none;
+                margin-right: 0;
+              }
+
+              .image_network {
+                padding-top: 13px;
+
+                p {
+                  height: 60px;
+                  font-size: 15px;
+
+                  img {
+                    height: 35px;
+                    width: 35px;
+
+                  }
+
+                  span {
+                    font-size: 8px;
+                  }
+                }
+              }
+
+              .copyright {
+                margin-top: 20px;
+                padding-bottom: 10px;
+                text-align: none;
+                max-width: 320px;
+              }
+            }
+          }
+        }
       }
     }
   }
