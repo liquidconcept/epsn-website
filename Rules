@@ -47,8 +47,8 @@ route '/javascript/*/' do
   item.identifier.chop + '.js'
 end
 
-route '/mednat/index.html' do
-  '/mednat.html'
+route '/mednat_trouver_julien/' do
+  '/mednat/index.html'
 end
 
 route '*' do
