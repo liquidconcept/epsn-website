@@ -1,0 +1,234 @@
+@import "compass/typography/text/replacement";
+@import "compass/utilities/general/clearfix";
+
+/*----------------------------------------*/
+/*               RESPONSIVE               */
+/*----------------------------------------*/
+
+@media handeld and (max-width:320px), screen and (max-device-width: 320px), screen and (max-width: 480px) {
+
+/*----------------------------------------*/
+/*                 COLOR                  */
+/*----------------------------------------*/
+
+$dark_green: #0F6022;
+$green: #3a5d29;
+$grey: #525252;
+$light_grey: #E5E5E5;
+$black: #000;
+$white: #FFF;
+
+/*----------------------------------------*/
+/*                DEFAULT                 */
+/*----------------------------------------*/
+
+  h2 {
+    font-size: 2em;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+/*----------------------------------------*/
+/*                HEADER                  */
+/*----------------------------------------*/
+
+  section.main {
+    article.main {
+      width: 320px;
+      margin-bottom: 25px;
+
+      #content_logo {
+        width: 320px;
+        height: 150px;
+        margin: 10px auto;
+
+        h1#logo {
+          width: 160px;
+          margin-left: 80px;
+        }
+
+        #label {
+          .label_logo_1 {
+            margin: 50px 0px 0px 10px;
+            text-align: center;
+            font-size: 1.5em;
+          }
+
+          .label_logo_2 {
+            margin-left: 1px;
+            text-align: center;
+            font-size: 1em;
+          }
+        }
+      }
+      
+      h2 {
+        width: 280px;
+        margin: 0 auto;
+        margin-top: 0px;
+      }
+
+    .image_julien {
+      margin: 15px 0px 0px 0px;
+
+      h6.julien {
+        width: 301px;
+        height: 369px;
+        @include replace-text('charlie_julien_mobile.jpg');
+        margin-left: 10px;
+      }
+
+      h6.ou_est_julien {
+        width: 300px;
+        height: 144px;
+        float: none; 
+        @include replace-text('ou_julien_mobile.jpg');
+        margin-left: 10px;
+      }
+    }
+    }
+  }
+
+/*----------------------------------------*/
+/*             CONTENT FORM               */
+/*----------------------------------------*/
+
+  section.content {
+    width: 320px;
+
+    h3 {
+      width: 300px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    article.inscription {
+      form {
+        width: 300px;
+        height: 370px;
+
+        .input_form {
+          width: 280px;
+          height: 40px;
+          margin-bottom: 35px;
+
+          label {
+            margin-left: 10px;
+          }
+
+          input, select {
+            width: 240px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+          }
+
+          select {
+            width: 266px;
+          }
+
+          select {
+            font-size: 1em;
+          }
+        }
+
+        .subscribe {
+          width: 270px;
+          margin: 10px 0px 0px 10px;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+/*----------------------------------------*/
+/*                 FOOTER                 */
+/*----------------------------------------*/
+
+  /*************** DESCRIPTION **************/
+
+  footer.main {
+    section.description {
+      .content {
+        width: 300px;
+
+          p {
+            text-align: left;
+          }
+        }
+      }
+
+    /**************** CONTACT ****************/
+
+  section.contact {
+    background-color: $grey;
+
+     .content {
+        width: 300px;
+        height: 600px;
+
+        h3 {
+          font-size: 2em;
+          color: $white;
+        }
+
+        #addresses {
+          width: 280px;
+          height: 230px;
+          float: none;
+
+          address.administration {
+            float: none;
+
+            h5 {
+              font-size: 1.5em;
+            }
+
+            p {
+              font-size: 1em;
+            }
+          }
+
+          address.place_lesson {
+            float: none;
+
+            h5 {
+              font-size: 1.5em;
+            }
+
+            p {
+              font-size: 1em;
+            }
+          }
+        }
+
+        #network {
+          width: 250px;
+          height: 250px;
+          float: none;
+
+          .icon {
+            height: 45px;
+            margin-bottom: 10px;
+
+            p {
+              height: 45px;
+              font-size: 1.5em;
+            }
+
+            img {
+              height: 45px;
+              width: 45px;
+            }
+          }
+        }
+        
+        .copyright {
+          width: 300px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

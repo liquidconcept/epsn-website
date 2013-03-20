@@ -1,308 +1,330 @@
 @import "compass/reset";
 @import "compass/css3/border-radius";
 @import "compass/css3/box-shadow";
-@import "compass";
+@import "compass/typography/text/replacement";
+@import "compass/utilities/general/clearfix";
 
-/*******************************/
-/***          COLOR          ***/
-/*******************************/
+/*----------------------------------------*/
+/*                 COLOR                  */
+/*----------------------------------------*/
 
-$dark-green: #0F6022;
+$dark_green: #0F6022;
 $green: #3a5d29;
 $grey: #525252;
-$grey2: #c2c2c2;
-$light_grey: #ddd;
-$light_grey2: #eaeaea;
-$black: #3F3F3F;
+$light_grey: #E5E5E5;
+$black: #000;
+$white: #FFF;
 
-/*******************************/
-/***           FONT          ***/
-/*******************************/
+/*----------------------------------------*/
+/*                DEFAULT                 */
+/*----------------------------------------*/
 
-$global: Arial;
-$second: Tahoma;
-
-/*******************************/
-/***         DEFAULT         ***/
-/*******************************/
-
-.both {
-  clear: both; /* div clear both */
-}
-
-a > img {
-  text-decoration: none; border: none; /* border image in link IE */
-}
-
-h2 {
-  font-size: 40px;
-  font-weight: 700;
-  font-family: $global;
-  text-align: center;
-  color: $grey;
+body {
+  border-top: 8px solid $dark_green;
 }
 
 a {
-  color: white;
-  text-decoration: none;
+  color: $white;
+  border: none;
 }
 
-/*******************************/
-/***        GENERAL          ***/
-/*******************************/
+h1 {
+  font-size: 3em;
+  font-family: Arial;
+  font-weight: bold;
+}
 
-body {
-  border-top: 8px solid $dark-green;
+h2 {
+  font-size: 2em;
+  font-family: Arial;
+  color: $grey;
+  font-weight: bold;
+}
 
-  #main {
+h3 {
+  font-size: 1.5em;
+  font-family: Arial;
+  color: $dark_green;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-family: Arial;
+  color: $grey;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.2em;
+  font-family: Arial;
+  color: $black;
+  font-weight: bold;
+}
+
+p {
+  font-size: 0.9em;
+  font-family: Arial;
+  color: $black;
+}
+
+/*----------------------------------------*/
+/*                HEADER                  */
+/*----------------------------------------*/
+
+section.main {
+  article.main {
+    width: 800px;
     margin: 0 auto;
+    margin-bottom: 25px;
 
-    #header {
+    #content_logo {
+      width: 700px;
+      height: 75px;
+      margin-top: 15px;
 
-      #logo {
-        margin-left: 60px;
-        margin-top: 18px;
-
-        img {
-          float: left;
-          margin-right: 10px;
-        }
-
-        h3 {
-          font-family: $second;
-          color: $dark-green;
-          font-weight: 700;
-          font-size: 1.6em;
-          padding-top: 25px;
-        }
-
-        h1 {
-          font-family: $global;
-          font-size: 20px;
-          font-weight: lighter;
-        }
+      h1#logo {
+        width: 160px;
+        height: 75px;
+        @include replace-text('EPSN_logo.jpg');
+        float: left;
       }
 
-      .image_julien {
-        margin: 0 auto;
-        width: 800px;
+      #label {
+        padding-top: 30px;
 
-        img.julien {
-          margin-top: 50px;
+        .label_logo_1 {
+          font-family: Arial;
+          font-size: 1.5em;
+          font-weight: bold;
+          color: $dark_green;
+          margin-left: 170px;
         }
 
-        img.ou {
-          margin: 0 0 125px 50px;
+        .label_logo_2 {
+          font-family: Arial;
+          font-size: 1em;
+          margin-left: 170px;
         }
-      }
-
-      h2 {
-        margin-top: 80px;
       }
     }
+    
+    h2 {
+      margin-top: 25px;
+      text-align: center;
+    }
 
-    article#formulaire {
-    width: 1100px;
-    margin: 0 auto;
-    padding-bottom: 120px;
+    .image_julien {
+      margin: 25px 0px 0px 0px;
+      @include pie-clearfix;
 
-      h4 {
-        color: $green;
-        font-size: 30px;
-        font-weight: 700;
-        text-align: center;
-        font-family: $global;
-        margin-top: 8px;
+      h6.julien {
+        width: 319px;
+        height: 382px;
+        float: left;
+        @include replace-text('charlie_julien.jpg');
+        margin-left: 60px;
       }
 
-      form {
-        max-width: 600px;
-        margin-left: 20%;
+      h6.ou_est_julien {
+        width: 331px;
+        height: 173px;
+        float: right;
+        @include replace-text('ou_julien.jpg');
+        margin: 60px 60px 0px 0px;
+      }
+    }
+  }
+}
+
+/*----------------------------------------*/
+/*             CONTENT FORM               */
+/*----------------------------------------*/
+
+section.content {
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  h2 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  h3 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  article.inscription {
+    form {
+      width: 650px;
+      height: 280px;
+      margin: 0 auto;
+
+      .input_form {
+        width: 600px;
+        height: 40px;
+        margin-bottom: 10px;
 
         label {
+          margin-bottom: 20px;
+          font-size: 1.5em;
+          font-family: Arial;
           font-weight: bold;
-          font-style: normal;
-          font-size: 24px;
-          font-family: $global;
-          color: grey;
-          line-height: 55px;
+          color: $grey;
         }
 
         input, select {
-          background-color: #FFF;
-          border-width: 2px;
-          @include border-radius(5px);
-          border-color: $light_grey;
-          border-style: inset;
-          font-family: $global;
-          text-align: left;
-          width: 345px;
+          width: 351px;
           height: 35px;
-          float: right;
-          margin-top: 0;
-          margin-left: 0;
           font-size: 24px;
-          font-family: $global;
-          font-weight: 700;
-          font-style: normal;
-          color: grey;
+          font-family: Arial;
+          float: right;
+          background-color: $white;
+          border: solid $grey 2px;
+          @include border-radius(5px);
+        }
+
+        input {
+          width: 345px;
         }
 
         select {
-          color: #000;
-          font-family: $global;
-          font-size: 14px;
-          font-weight: 400;
-          width: 350px;
+          font-size: 1em;
         }
+      }
 
-        input.subscribe {
-          border-width: 0;
-          @include border-radius(5px);
-          border-color: $light_grey;
-          border-style: outset;
-          background-color: $green;
-          color: #FFF;
-          font-size: 30px;
-          font-weight: 700;
-          font-style: normal;
-          font-family: Verdana;
-          text-align: center;
-          width: 100%;
-          height: 64px;
-          @include background-image(linear-gradient(bottom, $green 0, #467031 100%));
-          @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.6));
-          margin: 0;
-        }
+      .subscribe {
+        width: 600px;
+        height: 50px;
+        color: $white;
+        font-size: 1.5em;
+        border-style: none;
+        @include border-radius(5px);
+        background-color: $green;
       }
     }
+  }
+}
 
-    footer {
-      clear: both;
-      background-color: $black;
+/*----------------------------------------*/
+/*                 FOOTER                 */
+/*----------------------------------------*/
 
-      section.description {
-          background-color: $light_grey2;
+/*************** DESCRIPTION **************/
 
-        article {
-          width: 1100px;
-          margin: 0 auto;
+footer.main {
+  section.description {
+    background-color: $light_grey;
+    border-top: $grey solid 1px;
 
-          #description {
-            padding-bottom: 30px;
-            padding-right: 160px;
-            border-top: 1px $grey2 solid;
-            padding-left: 135px;
+    .content {
+      width: 700px;
+      margin: 0 auto;
+      padding: 25px 0px 25px;
 
-            h1 {
-              padding: 20px 0 0 0;
-              color: $black;
-              font-size: 20px;
-              font-family: $second;
-              font-weight: 700;
-            }
+        h4 {
+          margin-bottom: 15px;
+        }
 
-            h2 {
-              color: #000;
-              font-size: 16px;
-              font-weight: 700;
-              text-align: left;
-              margin-top: 20px;
-              padding-bottom: 20px;
-            }
+        h5 {
+          margin-bottom: 15px;
+        }
 
-            p {
-              font-size: 14px;
-              font-family: $global;
-              color: #000;
-            }
+        p {
+          text-align: justify;
+        }
+      }
+    
+  }
+
+/**************** CONTACT ****************/
+
+section.contact {
+  background-color: $grey;
+
+   .content {
+      width: 700px;
+      height: 300px;
+      margin: 0 auto;
+      padding-top: 25px;
+
+      h3 {
+        color: $white;
+      }
+
+      #addresses {
+        width: 375px;
+        height: 100px;
+        float: left;
+        @include pie-clearfix;
+
+        address.administration {
+          float: left;
+          margin-top: 10px;
+
+          h5 {
+            color: $white;
+            margin-bottom: 10px;
+          }
+
+          p {
+            margin-bottom: 3px;
+            color: $white;
+          }
+        }
+
+        address.place_lesson {
+          float: right;
+          margin-top: 10px;
+
+          h5 {
+            color: $white;
+            margin-bottom: 10px;
+          }
+
+          p {
+            margin-bottom: 3px;
+            color: $white;
           }
         }
       }
-      div.network {
-        background-color: $black;
 
-         section {
-          width: 1100px;
-          margin: 0 auto;
+      #network {
+        width: 250px;
+        height: 200px;
+        float: right;
+        padding-left: 25px;
+        @include pie-clearfix;
 
-          .content_network {
-            margin-left: 135px;
+        .icon {
+          height: 35px;
+          margin-bottom: 10px;
 
-            h1 {
-              padding-top: 30px;
-              font-family: $second;
-              color: $light_grey2;
-              font-size: 20px;
-            }
-
-            h2 {
-              font-family: $second;
-              color: $light_grey2;
-              font-size: 14px;
-            }
-
-            h5 {
-              margin: 20px 0 20px 0;
-              font-size: 14px;
-              font-family: Tahoma;
-              font-weight: 700;
-              color: $light_grey2;
-            }
-
-            p {
-              color: $light_grey2;
-              font-size: 14px;
-              font-family: $second;
-            }
-
-            .administration {
-              float: left;
-              margin-right: 60px;
-              height: 200px;
-            }
-
-            .lieu_cours {
-              padding-top: 1px;
-              float: left;
-              margin-right: 180px;
-              height: 200px;
-            }
-
-            .image_network {
-              padding-top: 13px;
-
-              p.phone {
-                color: white;
-              }
-
-              p {
-                height: 60px;
-                font-size: 30px;
-                font-family: $second;
-                line-height: normal;
-                margin: 0;
-
-                img {
-                  padding-right: 30px;
-                  display: inline;
-                  height: 35px;
-                  width: 35px;
-                }
-
-                span {
-                  font-size: 12px;
-                  font-family: $second;
-                }
-              }
-            }
-
-            .copyright {
-              margin-top: 40px;
-              padding-bottom: 30px;
-              text-align: center;
-            }
+          p {
+            height: 35px;
+            float: right;
+            padding-top: 10px;
+            color: $white;
+            font-size: 1.5em;
           }
+
+          img {
+            height: 35px;
+            width: 35px;
+            float: left;
+          }
+        }
+      }
+      
+      .copyright {
+        width: 700px;
+        margin-top: 230px;
+
+        p {
+          text-align: center; 
+          color: $white;
         }
       }
     }
