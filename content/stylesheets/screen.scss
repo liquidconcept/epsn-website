@@ -18,6 +18,10 @@ body{
 	background-image:url(../images/fond.jpg);
 	background-repeat:repeat-x;
 }
+.disabled {
+	color: grey;
+}
+
 #page{
 	width:1000px;
 	margin:auto;
@@ -63,7 +67,7 @@ body{
 			}
 		}
 	}
-	
+
 	.contact{
 		width: 400px;
 		margin: 0 auto;
@@ -75,18 +79,18 @@ body{
 	#content{
 		margin-top:100px;
 		width:900px;
-	
+
 		.form {
 			span.label,span.spacer,span.multiple span {
 				width:120px;float:left;
-			}			 
+			}
 			span.multiple {
 				float:left;
-			}  
+			}
 			button {
   			@include fancy-button(#005D26, 15px, 1em);
  		 	}
- 
+
 			.submit_btn {
 				margin: 25px 0 40px 120px;
 			}
@@ -104,10 +108,10 @@ body{
 			margin-bottom:25px;
 			margin-left:80px;
 		}
-		
-		h2 { 
+
+		h2 {
 			font-size:90px;
-			font-family: 'Kristi', arial, serif; 
+			font-family: 'Kristi', arial, serif;
 			margin-bottom:45px;
 			margin-left:125px;
 			color:$hover_green;
